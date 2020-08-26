@@ -1,22 +1,31 @@
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static com.codeborne.selenide.Selenide.$x;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class MyClass {
+
+    @BeforeClass
+    public static void configuration() {
+        Configuration.timeout = 20;
+    }
+
     @Test
     public void trueTest() {
         Assert.assertTrue(true);
     }
 
     @Test
-    public void falseTest() {
-        Assert.assertTrue(false);
+    public void nextTrueTest() {
+        Assert.assertTrue(true);
     }
 
     @Test
     public void openPage() {
-        open("https://jediru.net/");
+        open("https://google.com/");
+        $x("//title[text()='Google']").shouldBe(Condition.exist);
     }
 }
