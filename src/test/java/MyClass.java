@@ -16,7 +16,8 @@ public class MyClass {
     public static void configuration() {
 //        Configuration.browser = "chrome";
 //        Configuration.timeout = 999;
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver");
         driver = new ChromeDriver();
     }
 
