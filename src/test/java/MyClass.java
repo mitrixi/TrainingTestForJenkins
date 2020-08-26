@@ -17,7 +17,7 @@ public class MyClass {
 //        Configuration.browser = "chrome";
 //        Configuration.timeout = 999;
 //        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
-        System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\geckodriver-v0.27.0-linux64.tar.gz");
+        System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\geckodriver-v0.27.0-linux64.tar.gz.asc");
         driver = new FirefoxDriver();
     }
 
