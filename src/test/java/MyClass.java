@@ -10,7 +10,7 @@ public class MyClass {
 
     @BeforeClass
     public static void configuration() {
-        Configuration.browser = "firefox";
+        Configuration.browser = "chrome";
         Configuration.timeout = 999;
     }
 
