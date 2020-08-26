@@ -21,12 +21,21 @@ allure {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
+compileJava.options.encoding = 'UTF-8'
+
 repositories {
     mavenCentral()
     jcenter()
 }
 
+//test {
+//    useJUnit()
+//    ignoreFailures = true
+//    testLogging.showStandardStreams = true
+//}
+
 dependencies {
+    compile group: 'com.codeborne', name: 'selenide', version: '5.13.1'
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile group: 'io.qameta.allure', name: 'allure-gradle', version: '2.3'
     testCompile group: 'io.qameta.allure', name: 'allure-junit4', version: '2.13.5'
