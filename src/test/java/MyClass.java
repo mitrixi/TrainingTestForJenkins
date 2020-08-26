@@ -10,7 +10,7 @@ public class MyClass {
 
     @BeforeClass
     public static void configuration() {
-        Configuration.timeout = 20;
+        Configuration.timeout = 999;
     }
 
     @Test
