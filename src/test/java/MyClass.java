@@ -27,6 +27,6 @@ public class MyClass {
     @Test
     public void openPage() {
         open("https://google.com/");
-        $x("//title[text()='Google']").shouldBe(Condition.exist);
+//        $x("//title[text()='Google']").shouldBe(Condition.exist);
     }
 }
