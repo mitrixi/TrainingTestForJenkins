@@ -7,10 +7,9 @@ import org.junit.Test;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MyClass {
-
     @BeforeClass
     public static void configuration() {
-        Configuration.browser = "firefox";
+        Configuration.browser = "SelenoidDriverProvider";
         Configuration.timeout = 999;
     }
 
@@ -25,8 +24,11 @@ public class MyClass {
     }
 
     @Test
-    public void openPage() {
+    public void openPage() throws InterruptedException {
+        Thread.sleep(5000);
         open("https://google.com/");
-        $x("//title[text()='Google']").shouldBe(Condition.exist);
+        Thread.sleep(5000);
+
+//        $x("//title[text()='Google']").shouldBe(Condition.exist);
     }
 }
