@@ -10,6 +10,7 @@ public class MyClass {
     @BeforeClass
     public static void configuration() {
         Configuration.browser = "SelenoidDriverProvider";
+//        Configuration.browser = "firefox";
         Configuration.timeout = 999;
     }
 
