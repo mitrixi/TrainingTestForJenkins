@@ -1,5 +1,6 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -15,6 +16,7 @@ public class MyClass {
 //        Configuration.browser = "SelenoidDriverProvider";
         Configuration.browser = "firefox";
         Configuration.timeout = 999;
+        WebDriverManager.firefoxdriver().setup();
     }
 
     @Test
