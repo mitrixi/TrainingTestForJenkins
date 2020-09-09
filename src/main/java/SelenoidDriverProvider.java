@@ -15,9 +15,9 @@ public class SelenoidDriverProvider implements WebDriverProvider {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setBrowserName("firefox");
         capabilities.setVersion("79.0");
-        capabilities.setPlatform(Platform.LINUX);
+//        capabilities.setPlatform(Platform.LINUX);
         capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", false);
+        capabilities.setCapability("enableVideo", true);
 
         try {
             return new RemoteWebDriver(
