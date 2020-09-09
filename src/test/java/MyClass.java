@@ -1,16 +1,19 @@
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import static com.codeborne.selenide.Selenide.*;
 
 public class MyClass {
     @BeforeClass
     public static void configuration() {
-        Configuration.browser = "SelenoidDriverProvider";
-//        Configuration.browser = "firefox";
+//        Configuration.browser = "SelenoidDriverProvider";
+        Configuration.browser = "firefox";
         Configuration.timeout = 999;
     }
 
