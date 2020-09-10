@@ -21,7 +21,7 @@ public class SelenoidDriverProvider implements WebDriverProvider {
 
         try {
             return new RemoteWebDriver(
-                    URI.create("http://localhost:4444/wd/hub").toURL(),
+                    URI.create("http://81.211.69.78:4444/wd/hub").toURL(),
                     capabilities
             );
         } catch (MalformedURLException e) {
