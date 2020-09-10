@@ -20,7 +20,7 @@ public class MyClass {
 //    private WebDriver driver;
     @BeforeClass
     public static void configuration() {
-        Configuration.remote = "http://localhost:4444/wd/hub/";
+        Configuration.remote = "http://81.211.69.78:4444/wd/hub/";
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
         DesiredCapabilities capabilities = new DesiredCapabilities();
